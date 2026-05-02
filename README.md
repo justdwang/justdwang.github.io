@@ -10,7 +10,8 @@ Site URL:
 ## Project Structure
 
 - `_config.yml`: site title, author profile, repository, SEO, and Jekyll settings
-- `_pages/about.md`: homepage content
+- `_pages/about.md`: homepage assembly file
+- `_pages/includes/`: section-level homepage content files
 - `_data/navigation.yml`: top navigation links and page anchors
 - `images/`: avatar, favicon, and image assets
 - `assets/`, `_sass/`, `_includes/`, `_layouts/`: theme files from AcadHomepage
@@ -19,13 +20,28 @@ Site URL:
 
 ## Editing The Homepage
 
-Most content updates should be made in:
+The homepage follows the same modular pattern as `RayeRen/rayeren.github.io`: `_pages/about.md` contains the front matter and a list of section includes, while each section lives in `_pages/includes/`.
+
+Most content updates should be made in the matching section file:
 
 ```text
-_pages/about.md
+_pages/includes/intro.md
+_pages/includes/research.md
+_pages/includes/news.md
+_pages/includes/publications.md
+_pages/includes/projects.md
+_pages/includes/education.md
+_pages/includes/contact.md
 ```
 
-The navigation bar uses in-page anchors. If you add a new section, add a matching anchor in `_pages/about.md` and a matching entry in `_data/navigation.yml`.
+`_pages/about.md` should usually only include sections:
+
+```liquid
+{% include_relative includes/intro.md %}
+{% include_relative includes/research.md %}
+```
+
+The navigation bar uses in-page anchors. If you add a new section, add a matching anchor in the corresponding `_pages/includes/*.md` file and a matching entry in `_data/navigation.yml`.
 
 Example:
 
