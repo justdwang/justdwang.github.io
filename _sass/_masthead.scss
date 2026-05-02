@@ -50,22 +50,6 @@
   display: none !important;
 }
 
-@include breakpoint($large) {
-  .masthead__menu {
-    .visible-links {
-      width: 100%;
-    }
-
-    .masthead__menu-home-item {
-      width: span(2 of 12);
-    }
-
-    .masthead__menu-home-item + .masthead__menu-item {
-      padding-left: span(0.5 of 12);
-    }
-  }
-}
-
 .masthead__menu-item {
   display: block;
   list-style-type: none;
@@ -76,4 +60,3 @@
     font-weight: 700;
   }
 }
-
