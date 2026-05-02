@@ -6,8 +6,8 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title: "Dong Wang"
-description: "Academic personal homepage for Dong Wang."
+title: "Dong Wang | 王东"
+description: "Decoding genetic codes, mapping biological functions"
 repository: "justdwang/justdwang.github.io"
 google_scholar_stats_use_cdn: true
 
@@ -23,7 +23,7 @@ baidu_site_verification: # get baidu_site_verification from https://ziyuan.baidu
 author:
   name: "Dong Wang"
   avatar: "images/port.jpeg"
-  bio: "Academic homepage"
+  bio: "Assistant Professor"
   location:
   employer:
   pubmed:
@@ -46,7 +46,7 @@ author:
   lastfm:
   linkedin: # e.g., "linkedin username"
   dblp: # e.g., "https://dblp.org/pid/xx/xxxx.html"
-  orcid: # e.g., "https://orcid.org/xxxx"
+  orcid: "https://orcid.org/0009-0007-1488-4483" # e.g., "https://orcid.org/xxxx"
   pinterest:
   soundcloud:
   stackoverflow: # http://stackoverflow.com/users/123456/username
